@@ -1,8 +1,7 @@
 //written by LDG
 //this is kotlin bootcamp of UACTIVITY
-package KotlinBootCamp.Function
+package KotlinBootCamp.Function.Function
 
-import Kotlin_Function.numbers
 import java.util.*;
 
 fun main(args:Array<String>) {
@@ -15,7 +14,8 @@ fun main(args:Array<String>) {
     var fortune: String
     var i: Int = 0;
     repeat(10) {
-        fortune = getFortune(getBirthday())
+        fortune =
+            getFortune(getBirthday())
         println("\nYour fortune is: $fortune")
         if (fortune.contains("Take it easy"));
     }
@@ -29,7 +29,7 @@ fun main(args:Array<String>) {
 
 fun feedFish(){
     val day= randomDay()
-    val food=fishFood(day)
+    val food= fishFood(day)
 
     println("Today is $day and th fish eat $food")
 }
